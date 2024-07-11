@@ -4,7 +4,7 @@ import { Container, Typography, Card, CardContent, CardMedia, Button, Box } from
 
 const ProductDetails = () => {
   const { id } = useParams();
-  const product = { id, name: 'Sample Product', description: 'This is a sample product', price: 100, image: 'https://i5.walmartimages.com/asr/2fc16c30-2c0c-4174-90e7-7c677a013793_1.ffd60f9dd8c1fd7ff53121210743eb59.jpeg' };
+  const product = { id, name: 'DELL', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', price: 100, image: 'https://i5.walmartimages.com/asr/2fc16c30-2c0c-4174-90e7-7c677a013793_1.ffd60f9dd8c1fd7ff53121210743eb59.jpeg' };
 
   return (
     <Container>
@@ -13,7 +13,7 @@ const ProductDetails = () => {
           <CardMedia
             component="img"
             alt={product.name}
-            height="140"
+            height="260"
             image={product.image}
             title={product.name}
             sx={{ objectFit: 'contain' }}
@@ -29,7 +29,7 @@ const ProductDetails = () => {
               Price: ${product.price}
             </Typography>
           </CardContent>
-          <Button variant="contained" color="primary">
+          <Button sx={{margin:"12px"}}variant="contained" color="primary">
             Add to Cart
           </Button>
         </Card>
