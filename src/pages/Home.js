@@ -38,8 +38,8 @@ const electronicItems = [
 const Home = () => {
   return (
     <>
-      <Box sx={{height:"30%"}}>
-        <img src={"https://static.vecteezy.com/system/resources/previews/002/478/302/original/sale-electronics-banner-background-free-vector.jpg"} alt="Banner" style={{ width: '100%', height: '300px', objectFit: 'cover' }} />
+      <Box  sx={{ height: "30%" }}>
+        <img src={"https://static.vecteezy.com/system/resources/previews/002/478/302/original/sale-electronics-banner-background-free-vector.jpg"} alt="Banner" style={{ width: '100%', height: "600px", objectFit: 'cover' }} />
       </Box>
       <Container>
         <Typography variant="h4" component="h1" gutterBottom>
